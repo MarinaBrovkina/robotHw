@@ -40,6 +40,7 @@ public class Main {
             sizeToFreq.put(count, sizeToFreq.getOrDefault(count, 0) + 1);
         }
     }
+
        public static void freqStats(Map<Integer, Integer> sizeToFreq) {
         int maxFreq = 0;
         int freqCount = 0;
@@ -54,7 +55,6 @@ public class Main {
             }
         }
         System.out.println("Самое частое количество повторений " + maxFreq + " (встретилось " + freqCount + " раз)");
-
         System.out.println("Другие размеры:");
         for (int count : sizeToFreq.keySet()) {
             int freq = sizeToFreq.get(count);
